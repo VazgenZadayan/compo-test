@@ -1,0 +1,8 @@
+@import "/src/styles/mixins";
+
+.app {
+  min-width: 1680px;
+  height: 1610px;
+  display: flex;
+  flex-direction: column;
+}

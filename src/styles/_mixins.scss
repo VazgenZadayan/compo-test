@@ -1,0 +1,10 @@
+@use "sass:math";
+@mixin fontRem($size, $weight: 400, $lineHeight: initial) {
+  font-size: math.div($size, 16) + rem !important;
+  font-weight: $weight !important;
+  @if ($lineHeight == initial) {
+    line-height: $lineHeight !important;
+  } @else {
+    line-height: math.div($lineHeight, $size) !important;
+  }
+}
